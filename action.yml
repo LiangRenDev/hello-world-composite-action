@@ -19,5 +19,5 @@ runs:
       shell: pwsh
     - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
       shell: pwsh          
-    - run: goodbye.PS1
+    - run: '& $env:GITHUB_ACTION_PATH/goodbye.PS1'
       shell: pwsh
